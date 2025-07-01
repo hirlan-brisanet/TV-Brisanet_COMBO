@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Oferta COMBO Brisanet</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+    }
+    video {
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+</head>
+<body>
+  <video src="video_marketing_combo.mp4" controls autoplay loop></video>
+
+  <script>
+    const video = document.querySelector('video');
+    setInterval(() => {
+      if (video.paused) {
+        video.play().catch(() => {});
+      }
+    }, 5000); // a cada 5 segundos, verifica se o vídeo ainda está tocando
+  </script>
+</body>
+</html>
